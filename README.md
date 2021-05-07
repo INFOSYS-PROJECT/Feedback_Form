@@ -1,2 +1,12 @@
 # Feedback_Form
-This repository contains the feedback form along with the registration and login.
+
+
+
+##Installations:
+
+--> npm install express --save
+
+--> npm install body-parser --save
+
+--> npm install mongoose --save
+
