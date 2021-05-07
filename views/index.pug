@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content=
+			"width=device-width, initial-scale=1.0")
+		
+
+
+		title Reg Form
+		//- we are directly use static files because
+		// already use static serve
+		link(rel="stylesheet", href="/static/style.css")
+	body
+	    
+		.form
+		
+			h2 REGISTRATION FORM
+			if(msg)
+				small=msg
+			//- feedback_form POST route
+			
+			form(action="/index",method="POST")
+				label(for="name") Name:
+				input(
+				type="text"
+				id="name"
+				name="name"
+				
+				)
+
+				label(for="email") Email:
+				input(
+				type="email"
+				id="email"
+				name="email"
+				
+				)
+				label(for="password") Password:
+				input(
+				type="password"
+				id="password"
+				name="password"
+				
+				)
+
+				input(
+				type="submit"
+				value="Submit"
+				class="btn btn-lg btn-primary btn-block"
+				)
