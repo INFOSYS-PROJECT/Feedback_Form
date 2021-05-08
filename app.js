@@ -29,7 +29,7 @@ app.use(express.urlencoded());
 
 // Define and use pug engine so also
 // declare path on rendering
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Database Connection
@@ -84,9 +84,24 @@ const feedModal = mongoose
 	.model('feeds', feedSchecma);
 app.get('/', function (req, res) {
 		// Rendering your form
-		res.render('index');
+		res.render('home_page');
 	});
 
+	app.get('/index', function (req, res) {
+		// Rendering your form
+		res.render('index');
+	});
+	
+	app.get('/contents_of_frame1', function (req, res) {
+		// Rendering your form
+		res.render('contents_of_frame1');
+	});
+
+	app.get('/home', function (req, res) {
+		// Rendering your form
+		res.render('home');
+	});
+		
 
 // Handling get request
 app.get('/login', function (req, res) {
@@ -99,11 +114,10 @@ app.post('/login', async(req, res) =>{
 	try{
 		const name= req.body.name;
 		const email= req.body.email;
-		console.log("baby");
+		
 		//console.log($email1,'hiii');
 		const useremail = await feedModal.findOne({email:email});
-		//console.log('${useremail} hiiiii')
-		console.log("baby");
+		//console.log('${useremail} hiiiii');
 		if(useremail.name == name)
 		{
 			res.status(201).render("feedback_form");

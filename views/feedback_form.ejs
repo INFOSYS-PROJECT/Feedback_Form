@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Feedback Form</title>
+    <!-- already use static serve-->
+    <link rel="stylesheet" href="/static/style.css"/>
+  </head>
+  <body>
+    <div class="form">
+      <h2>Feedback Form</h2>
+      <div style="overflow:scroll; height:650px;">
+        <form action="/feedback_form" method="POST">
+          <label for="name">Enter Your Name</label>
+          <input id="name" type="text" name="name" required="required"/>
+          <label for="email">Enter Your Email</label>
+          <input id="email" type="email" name="email" required="required"/>
+          <div style="padding-bottom: 18px;">Level of knowledge at the end of the course<br/>
+            <select class="form-control" id="Manager" name="Manager" style="max-width : 500px;">
+              <option>Lokeshwari</option>
+              <option>Vasudha</option>
+              <option>Karthik</option>
+              <option>Mohan</option>
+              <option>YSHU</option>
+              <option>Hemath</option>
+            </select>
+          </div>
+          <div style="max-width: 400px;"></div>
+          <div style="display: flex; padding-bottom: 18px;max-width : 100px;"></div>
+          <div style="padding-bottom: 18px;"></div>
+          <div class="required-field">1)How effectively educator is presenting and communicating with you?<br/>
+            <input id="Excellent" type="radio" name="q1" value="2" required="required"/>
+            <label for="q1"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q1" value="1"/>
+            <label for="q1">Good</label><br/>
+            <input id="Average" type="radio" name="q1" value="0"/>
+            <label for="q1">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q1" value="-1"/>
+            <label for="q1">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">2)Did you feel comfortable expressing your problems to your trainer?<br/>
+            <input id="Excellent" type="radio" name="q2" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q2" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q2" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q2" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">3)How efficiently educator can grab the attention of you in the class?<br/>
+            <input id="Excellent" type="radio" name="q3" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q3" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q3" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q3" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">4)How Well the Eduactor has been utilizing the time of class?<br/>
+            <input id="Excellent" type="radio" name="q4" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q4" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q4" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q4" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">5)How do you rate the Usage of examples and analogies to explain the required concepts by Educator?<br/>
+            <input id="Excellent" type="radio" name="q5" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q5" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q5" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q5" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">6)How Would you rate the Knowledge of an educator on the topics taught?<br/>
+            <input id="Excellent" type="radio" name="q6" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q6" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q6" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q6" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <div style="padding-bottom: 18px;">7)How effectively the Educator is Capable to clarify your doubts?<br/>
+            <input id="Excellent" type="radio" name="q7" value="2" required="required"/>
+            <label for="Excellent"> Excellent</label><br/>
+            <input id="Good" type="radio" name="q7" value="1"/>
+            <label for="Good">Good</label><br/>
+            <input id="Average" type="radio" name="q7" value="0"/>
+            <label for="Average">Average</label><br/>
+            <input type="radio" id="Need To Be Improved" name="q7" value="-1"/>
+            <label for="Need To Be Improved">Need To Be Improved</label><br/>
+          </div>
+          <label for="feedi">Enter Your feedback</label>
+          <input id="email" type="text" name="feedi" required="required"/>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reg Form</title>
+    <!-- already use static serve-->
+    <link rel="stylesheet" href="/static/style.css"/>
+  </head>
+  <body>
+    <div class="form">
+      <h2>REGISTRATION FORM</h2>
+      <form action="/index" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="login">Login</a>
+        <br>
+        <br>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>

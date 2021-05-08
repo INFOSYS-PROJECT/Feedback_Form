@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Form</title>
+    <!-- already use static serve-->
+    <link rel="stylesheet" href="/static/style.css"/>
+  </head>
+  <body>
+    <div class="form">
+      <h2>LOGIN FORM</h2>
+      <form action="/login" method="POST">
+        <label for="name">Enter Your Name</label>
+        <input id="name" type="text" name="name" required="required"/>
+        <label for="email">Enter Your Email</label>
+        <input id="email" type="email" name="email" required="required"/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="index">Registration</a>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
